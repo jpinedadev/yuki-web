@@ -7,7 +7,7 @@ Este repositorio forma parte de "Mi ruta dev" utilizando HTML y CSS, he desarrol
 * * *
 
 ### Previsualización
-[![Img Alt Text](imagen)]
+[![Img Alt Text](https://github.com/jpinedadev/yuki-web/blob/main/preview.png)(https://jpinedadev.github.io/yuki-web/)]
 
 ### Pre-requisitos 🔖
 * [Git](https://git-scm.com/)

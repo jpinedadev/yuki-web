@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <div class="contenedor-principal"> 
     <header>
       <!--imagen de cabecera -->
@@ -16,8 +17,28 @@
       <div class="nav1 topnav" id="myTopnav">
           <a href="#" class="active"><i class="fa fa-fw fa-home"></i><Home</a>
           <a href="#">List Project</a>
-          <a href="#">Project On-Going</a>
-          <a href="#">Anime Complete</a>
+          <div class="dropdown">
+            <button class="dropbtn">Project On-Going 
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Akuma no riddle</a>
+              <a href="#">One Piece</a>
+              <a href="#">Shingeki no Kyoujin</a>
+              <a href="#">Haikyuu!!</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Anime Complete 
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Captain Earth</a>
+              <a href="#">Mahouka Koukou</a>
+              <a href="#">Nisekoi</a>
+              <a href="#">Seikoku no Dragonar</a>
+            </div>
+          </div> 
           <a href="#">Staff</a>
           <a href="#">IRC</a>
           <a href="#">Open Recruitment</a>
@@ -48,7 +69,7 @@
             <li><img src="img/anime_006.jpg" alt="imagen 6"></li>
             <li><img src="img/anime_007.jpg" alt="imagen 7"></li>
           </ul>
-        </div> 
+        </div><hr> 
         <section>
             <div class="section-img">
               <img src="img/anime_006.jpg" alt="imagen 6">
@@ -117,9 +138,19 @@
             <a href="#" class="btn-like"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like 0</a>
             <a href="#" class="btn-download">Download <i class="fa fa-download" aria-hidden="true"></i></a>
           </div>
-      </section>
-
+      </section><hr>
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
       </article>
+
       <aside>
         <h2>Labels</h2> <hr>
         <div class="label-items">
@@ -153,13 +184,13 @@
             <p>Lorem Ipsum: anime news</p>
           </div>
         </div>
-        <h2>Contributors</h2>
+        <h2>Contributors</h2> <hr>
         <div class="contributors-items">
           <ul>
             <li><i class="fa fa-github" aria-hidden="true"></i> jpinedadev</li>
           </ul>
         </div>
-        <h2>Blog Archive</h2>
+        <h2>Blog Archive</h2> <hr>
         <div class="archive-items">
           <ul class="a-item">
             <li>2005(2)</li>
@@ -170,6 +201,13 @@
             <li>January(2)</li>
           </ul>
         </div>
+        <h2>Socials</h2> <hr>
+          <div class="socials">
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-reddit"></a>
+          </div>
       </aside>
     </div>
     <footer>
@@ -185,6 +223,26 @@
         x.className = "topnav";
       }
     }
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+       mybutton.style.display = "block";
+     } else {
+       mybutton.style.display = "none";
+     }
+   }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
   </script>
   </body>
 </html>

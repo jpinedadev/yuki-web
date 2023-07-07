@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="contenedor-principal"> 
@@ -12,33 +13,18 @@
       <!--imagen de cabecera -->
     </header>
     <nav>
-      <div class="nav1">
-        <ul>
-          <li><img src="assets/icons/house.svg" alt=""></li>
-          <li>List Project </li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Project On Going ▼</a>
-            <div class="dropdown-content">
-              <a href="#">Akuma No Riddle</a>
-              <a href="#">One Piece</a>
-              <a href="#">Shingeki no Kyojin</a>
-              <a href="#">Haikyuu!!</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Anime Complete ▼</a>
-            <div class="dropdown-content">
-              <a href="#">Captain Earth</a>
-              <a href="#">Mahouka Koukou no Rettousei</a>
-              <a href="#">Nisekoi</a>
-              <a href="#">Seikoku no Dragonar</a>
-            </div>
-          </li>
-          <li>Staff </li>
-          <li>IRC </li>
-          <li>Open Recruiment </li>
-        </ul>
-      </div>
+      <div class="nav1 topnav" id="myTopnav">
+          <a href="#" class="active"><i class="fa fa-fw fa-home"></i><Home</a>
+          <a href="#">List Project</a>
+          <a href="#">Project On-Going</a>
+          <a href="#">Anime Complete</a>
+          <a href="#">Staff</a>
+          <a href="#">IRC</a>
+          <a href="#">Open Recruitment</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+          </a>
+     </div>
       <div class="nav2">
         <ul>
           <li>About Us</li>
@@ -47,8 +33,9 @@
           <li>IRC</li>
           <li>Open Recruiment</li>
         </ul>
-        <span>
-          <input type="search" placeholder="Search your keyboard">
+        <span class="search-container">
+          <input type="search" placeholder="Search your keyboard" name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
         </span>
       </div>
     </nav>
@@ -70,10 +57,8 @@
               <h2>Lorem Ipsum: anime templates</h2>
               <p>Release at 12.00 AM Posted by blogger have 1 comments</p>
               <p>Anime: anime,anime templates</p>
-              <a href="#"><img src="assets/icons/like.svg" alt="icon like">  Suka 0</a>
-            </div>
-            <div class="section-download">
-              <a href="#">Download»</a>
+              <a href="#" class="btn-like"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like 0</a>
+              <a href="#" class="btn-download">Download <i class="fa fa-download" aria-hidden="true"></i></a>
             </div>
         </section>
         <hr>
@@ -86,11 +71,10 @@
             <h2>Lorem Ipsum: anime templates</h2>
             <p>Release at 12.00 AM Posted by blogger have 0 comments</p>
             <p>Anime: anime,anime renders</p>
-            <a href="#"><img src="assets/icons/like.svg" alt="icon like">  Suka 0</a>
+            <a href="#" class="btn-like"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like 0</a>
+            <a href="#" class="btn-download">Download <i class="fa fa-download" aria-hidden="true"></i></a>
           </div>
-          <div class="section-download">
-            <a href="#">Download»</a>
-          </div>
+
       </section>
       <hr>
 
@@ -102,10 +86,8 @@
             <h2>Lorem Ipsum: anime templates</h2>
             <p>Release at 12.00 AM Posted by blogger have 0 comments</p>
             <p>Anime: anime,anime lyrics</p>
-            <a href="#"><img src="assets/icons/like.svg" alt="icon like">  Suka 0</a>
-          </div>
-          <div class="section-download">
-            <a href="#">Download»</a>
+            <a href="#" class="btn-like"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like 0</a>
+            <a href="#" class="btn-download">Download <i class="fa fa-download" aria-hidden="true"></i></a>
           </div>
       </section>
       <hr>
@@ -118,10 +100,8 @@
             <h2>Lorem Ipsum: anime templates</h2>
             <p>Release at 12.00 AM Posted by blogger have 0 comments</p>
             <p>Anime: anime,anime tutorials</p>
-            <a href="#"><img src="assets/icons/like.svg" alt="icon like">  Suka 0</a>
-          </div>
-          <div class="section-download">
-            <a href="#">Download»</a>
+            <a href="#" class="btn-like"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like 0</a>
+            <a href="#" class="btn-download">Download <i class="fa fa-download" aria-hidden="true"></i></a>
           </div>
       </section>
       <hr>
@@ -134,10 +114,8 @@
             <h2>Lorem Ipsum: anime templates</h2>
             <p>Release at 12.00 AM Posted by blogger have 0 comments</p>
             <p>Anime: anime,anime news</p>
-            <a href="#"><img src="assets/icons/like.svg" alt="icon like">  Suka 0</a>
-          </div>
-          <div class="section-download">
-            <a href="#">Download»</a>
+            <a href="#" class="btn-like"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like 0</a>
+            <a href="#" class="btn-download">Download <i class="fa fa-download" aria-hidden="true"></i></a>
           </div>
       </section>
 
@@ -152,7 +130,7 @@
           <span>anime templates</span>
           <span>anime tutorials</span>         
         </div>
-        <h2>Entri Populer</h2> <hr>
+        <h2>Popular Post</h2> <hr>
         <div class="entri-items">
           <div class="e-item">
             <img src="img/anime_006.jpg" alt="anime image 006">
@@ -178,7 +156,7 @@
         <h2>Contributors</h2>
         <div class="contributors-items">
           <ul>
-            <li><img src="assets/icons/bootstrap.svg" alt="bootstrap"> jpinedadev</li>
+            <li><i class="fa fa-github" aria-hidden="true"></i> jpinedadev</li>
           </ul>
         </div>
         <h2>Blog Archive</h2>
@@ -198,5 +176,15 @@
       <span>jpinedadev © 2023, All Right Reverses</span> 
     </footer>
     </div>
-</body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  </body>
 </html>

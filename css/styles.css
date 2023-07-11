@@ -246,7 +246,6 @@ nav{
   transition: 0.8s;
 }
 
-
 .btn-like{
   background: var(--color-blue);
 }
@@ -473,7 +472,7 @@ footer span{
     display: block;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 810px) {
   body{
     margin:1vh;
     display:flex;
@@ -541,8 +540,5 @@ footer span{
     margin: 0.5vw;
   }
 
-
-
-
-
 }
+
